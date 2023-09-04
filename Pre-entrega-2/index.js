@@ -27,7 +27,7 @@ do{
     let decision=alert("Elija el producto que desee del 1 al 7. En el caso de querer salir presione la tecla s")
     let eleccion_compra=prompt("Que producto te interesa?")
     let monto_final=parseFloat(prompt("Ingrese el precio de su producto:"))
-    let confirmacion=prompt("Quieres algo mas?")
+    let confirmacion=prompt("Queres algo mas?")
     let modo_pago=prompt("Como vas a pagar?\n1-Efectivo\n2-Debito\n3-Credito")
 
     if(eleccion_compra==1){
@@ -49,10 +49,13 @@ do{
     }
     else if(decision == "s"){
         alert("Decidiste salir")
+        break
     }
     else{
         alert("Error")
     }
+
+
     switch(modo_pago){
         case "1":
             let descuento_efectivo=calculo_descuento(monto_final,30)
